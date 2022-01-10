@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvLookingDevice"
+        style="@style/LargeTitle"
+        android:text="@string/ani_device_lookingfor_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/MainText"
+        android:text="@string/ani_device_lookingfor_content1"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLookingDevice" />
+
+    <View
+        android:layout_width="500pt"
+        android:layout_height="500pt"
+        android:layout_marginTop="500pt"
+        android:background="@color/red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px2pt_48"
+        app:layout_constraintTop_toBottomOf="@id/tvLookingDevice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        layout="@layout/home_view_device"/>
+
+    <TextView
+        android:id="@+id/tvNotShow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/ani_device_connect_action_notshown"
+        android:layout_marginBottom="@dimen/margin_20"
+        style="@style/MainText.15.blue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

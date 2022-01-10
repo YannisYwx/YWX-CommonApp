@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="200pt">
+
+    <com.ywx.common.widget.ExpandableCLayout
+        android:id="@+id/eclTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ecl_isExpand="false"
+        android:background="@drawable/white_round_card"
+        app:ecl_contentLayout="@layout/view_content_allday"
+        app:ecl_headerLayout="@layout/view_header_allday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ywx.common.widget.ExpandableCLayout
+        android:id="@+id/eclTop1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ecl_isExpand="false"
+        android:background="@drawable/white_round_card"
+        app:ecl_contentLayout="@layout/view_content_start_time_set"
+        app:ecl_headerLayout="@layout/view_header_start_time_set"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/px2pt_36"
+        app:layout_constraintTop_toBottomOf="@id/eclTop" />
+
+<!--    <net.cachapa.expandablelayout.ExpandableLayout-->
+<!--        android:id="@+id/elMovementReminders"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="visible"-->
+<!--        app:el_expanded="true"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/vMovementReminders"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingBottom="@dimen/px2pt_10"-->
+<!--            android:visibility="visible"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/vTimeSettings"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/px2pt_24"-->
+<!--                android:layout_marginTop="@dimen/px2pt_24"-->
+<!--                android:layout_marginEnd="@dimen/px2pt_24"-->
+<!--                android:background="@drawable/white_round_card"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <com.ywx.common.widget.CommonItemView-->
+<!--                    android:id="@+id/civAllDay"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/white_round_card"-->
+<!--                    app:hasSwitchButton="true"-->
+<!--                    app:isChecked="true"-->
+<!--                    app:label="@string/ani_general_date_allday"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <net.cachapa.expandablelayout.ExpandableLayout-->
+<!--                    android:id="@+id/elStartEndTime"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:el_duration="300"-->
+<!--                    app:el_expanded="true"-->
+<!--                    app:el_parallax="0.5"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/civAllDay">-->
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/clStartEndTimeSettings"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvStartFrom"-->
+<!--                            style="@style/MainText"-->
+<!--                            android:layout_marginStart="@dimen/px2pt_16"-->
+<!--                            android:text="Start from"-->
+<!--                            app:layout_constraintBottom_toBottomOf="@id/tvStartTimeValue"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="@id/tvStartTimeValue" />-->
+
+<!--                        <com.ywx.common.widget.Slided2SelectedView-->
+<!--                            android:id="@+id/ssvAmPm"-->
+<!--                            android:layout_width="288pt"-->
+<!--                            android:layout_height="@dimen/px2pt_36"-->
+<!--                            android:layout_marginEnd="@dimen/px2pt_5"-->
+<!--                            app:layout_constraintBottom_toBottomOf="@id/tvStartTimeValue"-->
+<!--                            app:layout_constraintEnd_toStartOf="@id/tvStartTimeValue"-->
+<!--                            app:layout_constraintTop_toTopOf="@id/tvStartTimeValue"-->
+<!--                            app:leftText="am"-->
+<!--                            app:rightText="pm" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvStartTimeValue"-->
+<!--                            android:layout_width="@dimen/px2pt_68"-->
+<!--                            android:layout_height="@dimen/px2pt_36"-->
+<!--                            android:layout_marginTop="@dimen/px2pt_10"-->
+<!--                            android:layout_marginEnd="@dimen/px2pt_16"-->
+<!--                            android:layout_marginBottom="@dimen/px2pt_10"-->
+<!--                            android:background="@drawable/shape_grep_text_btn"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="10:20"-->
+<!--                            android:textSize="@dimen/textSize_17"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                        <net.cachapa.expandablelayout.ExpandableLayout-->
+<!--                            android:id="@+id/elStartTime"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="423.36pt"-->
+<!--                            android:layout_marginTop="@dimen/px2pt_10"-->
+<!--                            android:background="#F3F7FE"-->
+<!--                            android:visibility="gone"-->
+<!--                            app:el_duration="300"-->
+<!--                            app:el_expanded="false"-->
+<!--                            app:el_parallax="0.8"-->
+<!--                            app:layout_constraintTop_toBottomOf="@id/tvStartTimeValue">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:id="@+id/rlStartTime"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="423.36pt"-->
+<!--                                android:layout_marginTop="@dimen/px2pt_10"-->
+<!--                                android:background="@drawable/shape_bottom_radius_card"-->
+<!--                                android:visibility="visible"-->
+<!--                                app:layout_constraintTop_toBottomOf="@id/tvStartTimeValue">-->
+
+<!--                                <com.ywx.common.widget.wheelview.WheelView-->
+<!--                                    android:id="@+id/wvStartTime"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    app:wv_textColorCenter="@color/appBlue"-->
+<!--                                    app:wv_textSize="@dimen/textSize_17" />-->
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="@dimen/px2pt_44"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:layout_marginStart="@dimen/px2pt_24"-->
+<!--                                    android:layout_marginEnd="@dimen/px2pt_24"-->
+<!--                                    android:background="@drawable/shape_blue_stroke" />-->
+
+<!--                            </RelativeLayout>-->
+<!--                        </net.cachapa.expandablelayout.ExpandableLayout>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvEndFrom"-->
+<!--                            style="@style/MainText"-->
+<!--                            android:layout_marginStart="@dimen/px2pt_16"-->
+<!--                            android:text="End at"-->
+<!--                            app:layout_constraintBottom_toBottomOf="@id/tvEndTimeValue"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="@id/tvEndTimeValue" />-->
+
+<!--                        <com.ywx.common.widget.Slided2SelectedView-->
+<!--                            android:id="@+id/ssvEndAmPm"-->
+<!--                            android:layout_width="288pt"-->
+<!--                            android:layout_height="@dimen/px2pt_36"-->
+<!--                            android:layout_marginEnd="@dimen/px2pt_5"-->
+<!--                            app:layout_constraintBottom_toBottomOf="@id/tvEndTimeValue"-->
+<!--                            app:layout_constraintEnd_toStartOf="@id/tvEndTimeValue"-->
+<!--                            app:layout_constraintTop_toTopOf="@id/tvEndTimeValue"-->
+<!--                            app:leftText="am"-->
+<!--                            app:rightText="pm" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvEndTimeValue"-->
+<!--                            android:layout_width="@dimen/px2pt_68"-->
+<!--                            android:layout_height="@dimen/px2pt_36"-->
+<!--                            android:layout_marginTop="@dimen/px2pt_10"-->
+<!--                            android:layout_marginEnd="@dimen/px2pt_16"-->
+<!--                            android:layout_marginBottom="@dimen/px2pt_10"-->
+<!--                            android:background="@drawable/shape_grep_text_btn"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="18:48"-->
+<!--                            android:textSize="@dimen/textSize_17"-->
+<!--                            app:layout_constraintBottom_toTopOf="@id/elEndTime"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@id/elStartTime" />-->
+
+<!--                        <net.cachapa.expandablelayout.ExpandableLayout-->
+<!--                            android:id="@+id/elEndTime"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="423.36pt"-->
+<!--                            android:background="@drawable/shape_bottom_radius_card"-->
+<!--                            app:el_duration="300"-->
+<!--                            app:el_expanded="false"-->
+<!--                            app:el_parallax="0.5"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@id/tvEndTimeValue">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:id="@+id/rlEndTime"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="423.36pt"-->
+<!--                                android:layout_marginTop="@dimen/px2pt_10"-->
+<!--                                android:layout_marginBottom="@dimen/px2pt_16"-->
+<!--                                android:background="@drawable/shape_bottom_radius_card"-->
+<!--                                android:visibility="visible"-->
+<!--                                app:layout_constraintTop_toBottomOf="@id/tvEndTimeValue">-->
+
+<!--                                <com.ywx.common.widget.wheelview.WheelView-->
+<!--                                    android:id="@+id/wvEndTime"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    app:wv_textColorCenter="@color/appBlue"-->
+<!--                                    app:wv_textSize="@dimen/textSize_17" />-->
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="@dimen/px2pt_44"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:layout_marginStart="@dimen/px2pt_24"-->
+<!--                                    android:layout_marginEnd="@dimen/px2pt_24"-->
+<!--                                    android:background="@drawable/shape_blue_stroke" />-->
+
+<!--                            </RelativeLayout>-->
+<!--                        </net.cachapa.expandablelayout.ExpandableLayout>-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </net.cachapa.expandablelayout.ExpandableLayout>-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/clSensitivity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/px2pt_24"-->
+<!--                android:layout_marginTop="@dimen/px2pt_24"-->
+<!--                android:layout_marginEnd="@dimen/px2pt_24"-->
+<!--                android:background="@drawable/white_round_card"-->
+<!--                android:padding="@dimen/px2pt_16"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/vTimeSettings">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvSensitivity"-->
+<!--                    style="@style/MainText"-->
+<!--                    android:text="@string/ani_device_wakeupgesture_sensitivity_title"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvSensitivityValue"-->
+<!--                    style="@style/MainText.grey"-->
+<!--                    android:text="High"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ivSenLow"-->
+<!--                    android:layout_width="@dimen/px2pt_28"-->
+<!--                    android:layout_height="@dimen/px2pt_28"-->
+<!--                    android:layout_marginTop="@dimen/px2pt_16"-->
+<!--                    android:src="@mipmap/emission_low"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tvSensitivity" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ivSenHigh"-->
+<!--                    android:layout_width="@dimen/px2pt_28"-->
+<!--                    android:layout_height="@dimen/px2pt_28"-->
+<!--                    android:layout_marginTop="@dimen/px2pt_16"-->
+<!--                    android:src="@mipmap/emission_high"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tvSensitivity" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatSeekBar-->
+<!--                    android:id="@+id/sbSensitivity"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/px2pt_16"-->
+<!--                    android:layout_marginEnd="@dimen/px2pt_16"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/ivSenLow"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/ivSenHigh"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/ivSenLow"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/ivSenLow" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvSensitivityTips1"-->
+<!--                style="@style/MainText.grey.12"-->
+<!--                android:layout_marginTop="@dimen/px2pt_8"-->
+<!--                android:paddingStart="@dimen/px2pt_40"-->
+<!--                android:paddingEnd="@dimen/px2pt_40"-->
+<!--                android:text="@string/ani_device_wakeupgesture_content_1operation"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/clSensitivity" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvSensitivityTips2"-->
+<!--                style="@style/MainText.grey.12"-->
+<!--                android:layout_marginTop="@dimen/px2pt_8"-->
+<!--                android:paddingStart="@dimen/px2pt_40"-->
+<!--                android:paddingEnd="@dimen/px2pt_40"-->
+<!--                android:text="@string/ani_device_wakeupgesture_content_2high"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tvSensitivityTips1" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </net.cachapa.expandablelayout.ExpandableLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

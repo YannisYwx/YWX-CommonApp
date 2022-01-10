@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/px2pt_16"
+    android:paddingBottom="@dimen/px2pt_16">
+
+    <TextView
+        android:id="@+id/tvSystem"
+        style="@style/MainText.emphasis"
+        android:text="@string/ani_device_system_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSystem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSystem">
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:icon="@mipmap/icon_device_update_style1_ltmode"
+            app:label="@string/ani_device_updatefirm_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civDisconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:icon="@mipmap/icon_device_disconnect_style1_ltmode"
+            app:label="@string/ani_device_disconnect_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civUpdate" />
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civForgetDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:icon="@mipmap/icon_device_forget_style1_ltmode"
+            app:label="@string/ios_device_forgetdevice_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civDisconnect" />
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civEraseDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:icon="@mipmap/icon_device_erase_style1_ltmode"
+            app:label="@string/ani_device_erasedevice_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civForgetDevice" />
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civPowerOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:icon="@mipmap/icon_device_poweroff_style1_ltmode"
+            app:label="@string/ani_device_poweroff_title"
+            app:hasBottomLine="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civEraseDevice" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

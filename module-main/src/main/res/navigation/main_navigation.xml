@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/nav_welcome">
+
+    <fragment
+        android:id="@+id/nav_welcome"
+        android:name="com.xxx.main.ui.fragment.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/main_fragment_welcome">
+        <action
+            android:id="@+id/action_welcome2SingUp"
+            app:destination="@id/fragmentSignUp"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="com.xxx.main.ui.fragment.account.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/main_fragment_sign_up">
+        <action
+            android:id="@+id/action_signUp2Email"
+            app:destination="@id/fragmentEmail"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEmail"
+        android:name="com.xxx.main.ui.fragment.account.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/main_fragment_su_email">
+        <action
+            android:id="@+id/action_email2CreatePasscode"
+            app:destination="@id/fragmentCreatePasscode"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragmentCreatePasscode"
+        android:name="com.xxx.main.ui.fragment.account.CreatePasscodeFragment"
+        android:label="fragment_create_passcode"
+        tools:layout="@layout/main_fragment_su_create_passcode">
+        <action
+            android:id="@+id/action_passcode2EnterPasscode"
+            app:destination="@id/fragmentEnterPasscode"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEnterPasscode"
+        android:name="com.xxx.main.ui.fragment.account.EnterPasscodeFragment"
+        android:label="fragment_enter_passcode"
+        tools:layout="@layout/main_fragment_su_enter_passcode">
+        <action
+            android:id="@+id/action_enterPasscode2EmailVerify"
+            app:destination="@id/fragmentEmailVerify"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEmailVerify"
+        android:name="com.xxx.main.ui.fragment.account.EmailVerifyFragment"
+        android:label="fragment_email_verify"
+        tools:layout="@layout/main_fragment_su_verify_email">
+        <action
+            android:id="@+id/action_emailVerify2ChangeEmail"
+            app:destination="@id/fragmentChangeEmail"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentChangeEmail"
+        android:name="com.xxx.main.ui.fragment.account.ChangeEmailFragment"
+        android:label="fragment_change_passcode"
+        tools:layout="@layout/main_fragment_su_change_passcode">
+        <action
+            android:id="@+id/action_changeEmail2AccountEstablish"
+            app:destination="@id/fragmentAccountEstablish"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentAccountEstablish"
+        android:name="com.xxx.main.ui.fragment.account.AccountEstablishFragment"
+        android:label="fragment_enter_passcode"
+        tools:layout="@layout/main_fragment_account_establish">
+        <action
+            android:id="@+id/action_accountEstablish2PersonSettings"
+            app:destination="@id/fragmentPersonSettings"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentPersonSettings"
+        android:name="com.xxx.main.ui.fragment.settings.PersonSettingsFragment"
+        android:label="fragment_person_settings"
+        tools:layout="@layout/main_fragment_person_settings">
+        <action
+            android:id="@+id/action_personSettings2LocationPermission"
+            app:destination="@id/fragmentLocationPermission"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentLocationPermission"
+        android:name="com.xxx.main.ui.fragment.permission.LocationPermissionFragment"
+        android:label="fragment_location_permission"
+        tools:layout="@layout/main_fragment_permission">
+        <action
+            android:id="@+id/action_locationPermission2BackupSyncData"
+            app:destination="@id/fragmentBackupSyncData"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentBackupSyncData"
+        android:name="com.xxx.main.ui.fragment.permission.BackupSyncDataFragment"
+        android:label="fragment_backup_sync_data"
+        tools:layout="@layout/main_fragment_backup_syn_data">
+        <action
+            android:id="@+id/action_backupSyncData2AllDone"
+            app:destination="@id/fragmentAllDone"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentAllDone"
+        android:name="com.xxx.main.ui.fragment.permission.AllDoneFragment"
+        android:label="fragment_backup_sync_data"
+        tools:layout="@layout/main_fragment_all_done">
+        <!--<action
+            android:id="@+id/action_personSettings2AllDone"
+            app:destination="@id/fragmentAllDone"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />-->
+    </fragment>
+</navigation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvBreath"
+        style="@style/LargeTitle.plus"
+        android:layout_marginStart="@dimen/margin_20"
+        android:text="@string/ani_device_respiratory_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBloodOxygen"
+        style="@style/MainText.grey"
+        android:layout_marginStart="@dimen/px2pt_40"
+        android:layout_marginTop="@dimen/px2pt_35"
+        android:text="@string/ani_data_class_bloodoxygen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBreath" />
+
+    <com.ywx.common.widget.CommonItemView
+        android:id="@+id/civMonitorAtNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px2pt_24"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:layout_marginEnd="@dimen/px2pt_24"
+        android:background="@drawable/white_round_card"
+        app:hasSwitchButton="true"
+        app:label="@string/ani_device_hearthealth_hrmonitor_title"
+        app:layout_constraintTop_toBottomOf="@id/tvBloodOxygen" />
+
+    <TextView
+        android:id="@+id/tvMonitorAtNightTips"
+        style="@style/MainText.grey.12"
+        android:paddingStart="@dimen/px2pt_40"
+        android:paddingEnd="@dimen/px2pt_40"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:text="@string/ani_device_bloodoxygen_nightmonitor_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civMonitorAtNight" />
+
+
+    <com.ywx.common.widget.ExpandableLooperView
+        android:id="@+id/elvHeartRate"
+        app:layout_constraintTop_toBottomOf="@id/tvMonitorAtNightTips"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:layout_margin="@dimen/px2pt_24"
+        app:isExpand="false"
+        app:maxValue="100"
+        app:minValue="50"
+        app:unit="%"
+        app:label="@string/ani_healthlist_lowboalarm_title"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvHeartRateNotificationTips"
+        android:layout_width="match_parent"
+        style="@style/MainText.grey.12"
+        android:text="You will receive a notification when your blood oxygen level is lower than 98%."
+        app:layout_constraintTop_toBottomOf="@id/elvHeartRate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/px2pt_40"
+        android:layout_marginEnd="@dimen/px2pt_40"
+        android:layout_marginTop="@dimen/px2pt_8"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

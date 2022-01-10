@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clContentStartTime"
+    android:layout_width="match_parent"
+    android:layout_height="423.36pt"
+    android:background="@drawable/shape_bottom_radius_card">
+
+    <com.ywx.common.widget.wheelview.WheelView
+        android:id="@+id/wvSelect"
+        android:layout_width="match_parent"
+        android:layout_height="423.36pt"
+        android:layout_centerInParent="true"
+        app:wv_textColorCenter="@color/appBlue"
+        android:background="@drawable/shape_blue_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:wv_textSize="@dimen/textSize_17" />
+
+    <View
+        android:id="@+id/vMask"
+        android:layout_width="match_parent"
+        android:layout_height="423.36pt"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/px2pt_24"
+        android:layout_marginEnd="@dimen/px2pt_24"
+        android:background="@drawable/shape_blue_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

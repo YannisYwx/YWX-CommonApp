@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--大标题 28sp/375-->
+    <style name="LargeTitle">
+        <item name="android:textSize">@dimen/largeTitleSize</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <style name="LargeTitle.plus" parent="LargeTitle">
+        <item name="android:textSize">@dimen/largeTitleSize.PLUS</item>
+    </style>
+
+    <style name="MainText"> <!--17/375-->
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <!--强调大文字 22/375-->
+    <style name="MainText.emphasis">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/emphasisTextSize</item>
+    </style>
+
+    <style name="MainText.bold" parent="MainText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainText.withe" parent="MainText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MainText.grey" parent="MainText">
+        <item name="android:textColor">@color/tcGrey</item>
+    </style>
+
+    <style name="MainText.grey.12" parent="MainText.grey">
+        <item name="android:textSize">@dimen/textSize_12</item>
+    </style>
+
+    <style name="MainText.grey.13" parent="MainText.grey">
+        <item name="android:textSize">@dimen/textSize_13</item>
+    </style>
+
+    <style name="MainText.blue" parent="MainText">
+        <item name="android:textColor">@color/tcBlue</item>
+    </style>
+
+    <style name="MainText.Warning" parent="MainText">
+        <item name="android:textColor">@color/tcWarning</item>
+    </style>
+
+    <style name="MainText.15" parent="MainText">
+        <item name="android:textSize">@dimen/textSize_15</item>
+    </style>
+
+    <style name="MainText.15.blue" parent="MainText.15">
+        <item name="android:textColor">@color/tcBlue</item>
+    </style>
+
+    <style name="btnText">
+        <item name="android:textSize">@dimen/btnTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <!--小的圆角蓝色按钮 取消阴影效果parent="android:Widget.Material.Button.Borderless.Colored"-->
+    <style name="BlueButton" parent="android:Widget.Material.Button.Borderless.Colored">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/px2pt_28</item>
+        <item name="android:textColor">@color/common_btn_text_color</item>
+        <item name="android:textSize">@dimen/textSize_15</item>
+        <item name="android:background">@drawable/common_big_rounded_btn</item>
+        <item name="android:paddingStart">@dimen/px2pt_12</item>
+        <item name="android:paddingEnd">@dimen/px2pt_12</item>
+    </style>
+
+    <!--蓝色的按钮 加大版 弹框中的底部按钮-->
+    <style name="BlueButton.plus" parent="BlueButton">
+        <item name="android:layout_height">@dimen/px2pt_40</item>
+    </style>
+
+    <!--浅蓝色的按钮-->
+    <style name="LightBlueButton" parent="BlueButton">
+        <item name="android:textColor">@color/text_blue</item>
+        <item name="android:background">@drawable/common_big_rounded_btn_light_blue</item>
+    </style>
+
+    <!--浅蓝色的按钮 加大版 弹框中的底部按钮-->
+    <style name="LightBlueButton.plus" parent="LightBlueButton">
+        <item name="android:layout_height">@dimen/px2pt_40</item>
+    </style>
+
+    <!--大按钮风格-->
+    <style name="LargeButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_big_height</item>
+        <item name="android:background">@drawable/common_btn_selector</item>
+        <item name="android:textSize">@dimen/btnTextSize</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/common_btn_text_color</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <style name="LargeEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">98pt</item>
+        <item name="android:maxLength">32</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+</resources>

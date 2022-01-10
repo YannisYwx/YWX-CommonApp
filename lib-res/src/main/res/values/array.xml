@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timePosition"><!--时间位置-->
+        <item>@string/ani_watchface_timeposition_content_topleft</item>
+        <item>@string/ani_watchface_timeposition_content_topright</item>
+        <item>@string/ani_watchface_timeposition_content_bottomleft</item>
+        <item>@string/ani_watchface_timeposition_content_bottomright</item>
+    </string-array>
+
+    <string-array name="dialFaceElement"><!--表盘元素-->
+        <item>@string/ani_general_action_off</item>
+        <item>@string/ani_watchface_abovetime_content_2date</item>
+        <item>@string/ani_watchface_abovetime_content_3fulldate</item>
+        <item>@string/ani_general_unit_pedometer</item>
+        <item>@string/ani_data_class_heartrate</item>
+        <item>@string/ani_watchface_abovetime_content_6sleepduration</item>
+        <item>@string/ani_watchface_abovetime_content_7distance</item>
+        <item>@string/ani_watchface_abovetime_content_8calorie</item>
+        <item>@string/ani_general_unit_pedometer</item>
+    </string-array>
+</resources>

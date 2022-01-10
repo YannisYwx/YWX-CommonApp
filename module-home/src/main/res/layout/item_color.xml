@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/px2pt_5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.xxx.home.ui.widget.CircleView
+        android:id="@+id/cv1"
+        android:layout_width="@dimen/px2pt_44"
+        android:layout_height="@dimen/px2pt_44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:circleColor="@color/appBlue"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.xxx.home.ui.widget.CircleView
+        android:id="@+id/cv2"
+        android:layout_width="@dimen/px2pt_40"
+        android:layout_height="@dimen/px2pt_40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:circleColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.xxx.home.ui.widget.CircleView
+        android:id="@+id/cvColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="@dimen/px2pt_36"
+        android:layout_height="@dimen/px2pt_36" />
+</androidx.constraintlayout.widget.ConstraintLayout>

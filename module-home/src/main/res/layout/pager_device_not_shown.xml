@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/LargeTitle"
+        android:text="@string/ani_device_connect_action_notshown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/px2pt_24"/>
+
+    <TextView
+        android:id="@+id/tvNotReady"
+        style="@style/MainText"
+        android:text="@string/ani_device_notshown_subtitle_1bluetooth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="@dimen/px2pt_24"/>
+
+    <TextView
+        android:id="@+id/tvTipsNotReady"
+        style="@style/MainText.grey"
+        android:text="@string/ani_device_notshown_content_1bluetooth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNotReady"
+        android:layout_marginTop="8pt"/>
+
+    <TextView
+        android:id="@+id/tvReset"
+        style="@style/MainText"
+        android:text="@string/ani_device_notshown_subtitle_2reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTipsNotReady"
+        android:layout_marginTop="@dimen/px2pt_24"/>
+
+    <TextView
+        android:id="@+id/tvTipsReset"
+        style="@style/MainText.grey"
+        android:text="@string/ani_device_notshown_content_2reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvReset"
+        android:layout_marginTop="8pt"/>
+
+    <TextView
+        android:id="@+id/tvStillTrouble"
+        style="@style/MainText"
+        android:text="@string/ani_device_notshown_subtitle_3trouble"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTipsReset"
+        android:layout_marginTop="@dimen/px2pt_24"/>
+
+    <TextView
+        android:id="@+id/tvTipsStillTrouble1"
+        style="@style/MainText.grey"
+        android:text="@string/ani_device_notshown_content_3trouble1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStillTrouble"
+        android:layout_marginTop="8pt"/>
+    <TextView
+        android:id="@+id/tvTipsStillTrouble2"
+        style="@style/MainText.grey"
+        android:text="@string/ani_device_notshown_content_3trouble2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTipsStillTrouble1"
+        android:layout_marginTop="8pt"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

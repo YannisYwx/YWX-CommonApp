@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_round_bg"
+    android:padding="@dimen/margin_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewConnecting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pbConnecting"
+            android:layout_width="200pt"
+            android:layout_height="200pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvConnecting"
+            style="@style/MainText.emphasis"
+            android:text="@string/ani_general_content_connecting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pbConnecting" />
+
+        <TextView
+            android:id="@+id/tvWait"
+            style="@style/MainText"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="Wait a moment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvConnecting" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewConnectFailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/ic_close"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/vStub"
+            android:layout_width="288pt"
+            android:layout_height="288pt"
+            android:layout_marginTop="6pt"
+            android:src="@mipmap/popup_icon_lookingfor_failed"
+            app:layout_constraintTop_toBottomOf="@id/ivClose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvNotice"
+            style="@style/MainText.emphasis"
+            android:text="@string/ani_device_connect_failed"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vStub" />
+
+        <TextView
+            android:id="@+id/tvTips"
+            style="@style/MainText"
+            android:text="Looks like you meet some problem during connecting, please try again"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNotice" />
+
+        <Button
+            android:id="@+id/btnTryAgain"
+            style="@style/BlueButton.plus"
+            android:text="@string/ani_general_action_tryagain"
+            app:layout_constraintTop_toBottomOf="@id/tvTips"
+            android:layout_marginTop="110pt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

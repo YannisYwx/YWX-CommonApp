@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/LargeTitle"
+        android:text="@string/ani_profile_height_question_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCm"
+        style="@style/LargeEditText"
+        android:hint="@string/_0"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:textSize="@dimen/textSize_64"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llFt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etFt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/_00"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/textColor"
+            android:textDirection="locale"
+            android:textSize="@dimen/textSize_64"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11.5pt"
+            android:layout_marginEnd="46pt"
+            android:text="ft"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize_13" />
+
+        <EditText
+            android:id="@+id/etIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/_00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/textColor"
+            android:textDirection="locale"
+            android:textSize="@dimen/textSize_64"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11.5pt"
+            android:text="in"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize_13" />
+    </LinearLayout>
+
+    <com.ywx.common.widget.Slided2SelectedView
+        android:layout_width="276pt"
+        android:layout_height="84pt"
+        android:layout_marginTop="69pt"
+        app:leftText="cm"
+        app:rightText="ft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCm"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

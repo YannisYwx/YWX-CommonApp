@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/px2pt_16"
+    android:paddingEnd="@dimen/px2pt_16"
+    android:paddingBottom="@dimen/px2pt_64">
+
+    <TextView
+        android:id="@+id/tvUpdateBeforeTips"
+        style="@style/MainText"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:text="Follow the steps below to reupdate your Watch RIG:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTips1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/tvUpdateBeforeTips">
+
+        <ImageView
+            android:id="@+id/ivTips1"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_step1_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTips1"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="@string/ani_watchrig_updatefirm_trouble_step1_p1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivTips1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTips2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_goneMarginTop="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clTips1">
+
+        <ImageView
+            android:id="@+id/ivTips2"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_step2_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTips2"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="@string/ani_watchrig_updatefirm_trouble_step2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivTips2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTips3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clTips2">
+
+        <ImageView
+            android:id="@+id/ivTips3"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_step3_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTips3"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="@string/ani_watchrig_updatefirm_trouble_step3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivTips3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTips4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clTips3">
+
+        <ImageView
+            android:id="@+id/ivTips4"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_step4_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTips4"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="@string/ani_watchrig_updatefirm_trouble_step4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivTips4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTips5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clTips4">
+
+        <ImageView
+            android:id="@+id/ivTips5"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_step5_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTips5"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="@string/ani_watchrig_updatefirm_trouble_step5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivTips5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clTips5">
+
+        <ImageView
+            android:id="@+id/ivNotice"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_tip_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNotice"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="@string/ani_watchrig_updatefirm_trouble_helptip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivNotice"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        style="@style/LargeButton"
+        android:layout_marginTop="@dimen/px2pt_48"
+        android:text="@string/ani_device_updatefirm_action_updatenow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clNotice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

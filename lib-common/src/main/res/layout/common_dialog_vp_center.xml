@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_round_bg"
+    android:padding="@dimen/margin_16">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/px2pt_28"
+        android:layout_height="@dimen/px2pt_28"
+        android:src="@mipmap/ic_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="288pt"
+        android:layout_height="288pt"
+        android:layout_marginTop="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivClose" />
+
+    <TextView
+        android:id="@+id/tvNotice"
+        style="@style/MainText.emphasis"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="Oops!Get far away from me!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivInfo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+    
+    <TextView
+        android:id="@+id/tvTips"
+        style="@style/MainText"
+        android:layout_marginTop="@dimen/px2pt_6"
+        android:text="Looks like you meet some problem during connecting, please try again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNotice" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        style="@style/LightBlueButton.plus"
+        android:layout_width="@dimen/px2pt_120"
+        android:layout_marginEnd="@dimen/px2pt_12"
+        android:text="@string/ani_general_action_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/glCenter" />
+
+    <Button
+        android:id="@+id/btnRight"
+        style="@style/BlueButton.plus"
+        android:layout_width="@dimen/px2pt_120"
+        android:layout_marginStart="@dimen/px2pt_12"
+        android:text="@string/ani_general_action_turnon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/glCenter"/>
+
+    <Button
+        android:id="@+id/btnCenter"
+        style="@style/BlueButton.plus"
+        android:layout_width="@dimen/px2pt_120"
+        android:text="ok"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

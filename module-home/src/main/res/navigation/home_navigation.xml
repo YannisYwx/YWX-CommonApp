@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/nav_today">
+
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.xxx.home.ui.fragment.today.TodayFragment"
+        android:label="fragment_today"
+        tools:layout="@layout/home_fragment_today">
+        <action
+            android:id="@+id/action_today2device"
+            app:destination="@+id/nav_device" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_device"
+        android:name="com.xxx.home.ui.fragment.device.DeviceFragment"
+        android:label="fragment_device"
+        tools:layout="@layout/home_fragment_device">
+
+        <action
+            android:id="@+id/action_device2heartHealthSettings"
+            app:destination="@id/fragmentHeartHealthSettings"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+
+        <action
+            android:id="@+id/action_device2breathSettings"
+            app:destination="@id/fragmentBreathSettings"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+
+        <action
+            android:id="@+id/action_device2SleepSettings"
+            app:destination="@id/fragmentSleepSettings"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+
+        <action
+            android:id="@+id/action_device2EditDialFace"
+            app:destination="@id/fragmentDialFaceSettings"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+
+        <action
+            android:id="@+id/action_device2WakeupGesture"
+            app:destination="@id/fragmentWakeupGesture"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+
+        <action
+            android:id="@+id/action_device2NotificationSettings"
+            app:destination="@id/fragmentNotificationSettings"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+
+        <action
+            android:id="@+id/action_device2FirmwareUpdateTips"
+            app:destination="@id/fragmentFirmwareUpdateTips"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+
+        <action
+            android:id="@+id/action_device2profile"
+            app:destination="@+id/nav_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.xxx.home.ui.fragment.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/home_fragment_profile" />
+
+    <fragment
+        android:id="@+id/fragmentHeartHealthSettings"
+        android:name="com.xxx.home.ui.fragment.device.monitor.HeartHealthSettingsFragment"
+        android:label="HeartHealth"
+        tools:layout="@layout/fragment_device_heart_health"
+        />
+
+    <fragment
+        android:id="@+id/fragmentBreathSettings"
+        android:name="com.xxx.home.ui.fragment.device.monitor.BreathSettingsFragment"
+        android:label="BreathSettings"
+        tools:layout="@layout/fragment_device_breath_setting"
+        />
+
+    <fragment
+        android:id="@+id/fragmentSleepSettings"
+        android:name="com.xxx.home.ui.fragment.device.monitor.SleepSettingsFragment"
+        android:label="SleepSettings"
+        tools:layout="@layout/fragment_device_sleep_setting"
+        />
+
+    <fragment
+        android:id="@+id/fragmentDialFaceSettings"
+        android:name="com.xxx.home.ui.fragment.device.dial.EditDialFaceFragment"
+        android:label="DialFaceSettings"
+        tools:layout="@layout/fragment_device_edit_dial_face"
+        />
+
+    <fragment
+        android:id="@+id/fragmentWakeupGesture"
+        android:name="com.xxx.home.ui.fragment.device.gesture.WakeUpGestureFragment"
+        android:label="WakeupGesture"
+        tools:layout="@layout/fragment_device_wakeup_gesture"
+        />
+
+    <fragment
+        android:id="@+id/fragmentNotificationSettings"
+        android:name="com.xxx.home.ui.fragment.device.notification.NotificationSettingsFragment"
+        android:label="NotificationSettings"
+        tools:layout="@layout/fragment_device_notification_settings"
+        >
+        <action
+            android:id="@+id/action_notify2Activity"
+            app:destination="@id/fragmentNotifyActivity"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentNotifyActivity"
+        android:name="com.xxx.home.ui.fragment.device.notification.ActivityNotifySettingsFragment"
+        android:label="NotifyActivity"
+        tools:layout="@layout/fragment_notify_activity"
+        />
+
+    <fragment
+        android:id="@+id/fragmentFirmwareUpdateTips"
+        android:name="com.xxx.home.ui.fragment.device.update.FirmwareUpdateTipsFragment"
+        android:label="FirmwareUpdateTips"
+        tools:layout="@layout/fragment_firmware_update_notice"
+        >
+        <action
+            android:id="@+id/action_tips2Updating"
+            app:destination="@id/fragmentFirmwareUpdating"
+            app:enterAnim="@anim/pop_win_content_fade_in"
+            app:exitAnim="@anim/pop_win_content_fade_out"
+            app:popEnterAnim="@anim/pop_win_content_fade_in"
+            app:popExitAnim="@anim/pop_win_content_fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFirmwareUpdateErrorTips"
+        android:name="com.xxx.home.ui.fragment.device.update.FirmwareUpdateErrorTipsFragment"
+        android:label="FirmwareUpdateErrorTips"
+        tools:layout="@layout/fragment_firmware_update_error_notice"
+        />
+
+    <fragment
+        android:id="@+id/fragmentFirmwareUpdating"
+        android:name="com.xxx.home.ui.fragment.device.update.FirmwareUpdatingFragment"
+        android:label="FirmwareUpdating"
+        tools:layout="@layout/fragment_firmware_updating"
+        >
+        <action
+            android:id="@+id/action_updating2Error"
+            app:destination="@id/fragmentFirmwareUpdateErrorTips"
+            app:enterAnim="@anim/dialog_right_in"
+            app:exitAnim="@anim/dialog_left_out"
+            app:popEnterAnim="@anim/dialog_left_in"
+            app:popExitAnim="@anim/dialog_right_out" />
+    </fragment>
+</navigation>

@@ -1,0 +1,21 @@
+apply from: "../module.build.gradle"
+
+android {
+    defaultConfig {
+        //如果是独立模块，则使用当前组件的包名
+        if (isBuildModule.toBoolean()) {
+            applicationId 'com.xxx.home'
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+    viewBinding.enabled = true
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+//    resourcePrefix "home_"
+}

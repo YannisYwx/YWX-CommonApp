@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/LargeTitle"
+        android:text="@string/ani_profile_avatar_question_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleTips"
+        style="@style/MainText"
+        android:text="@string/ani_profile_avatar_question_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        />
+
+    <ImageView
+        android:id="@+id/ivSkin1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/glCenter"
+        android:background="@drawable/main_gender_male"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_width="276pt"
+        android:layout_height="386pt" />
+
+    <ImageView
+        android:id="@+id/ivSkin2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivSkin1"
+        android:background="@drawable/main_gender_female"
+        android:layout_width="276pt"
+        android:layout_height="386pt"/>
+
+    <ImageView
+        android:id="@+id/ivSkin3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivSkin1"
+        android:background="@drawable/main_gender_other"
+        android:layout_width="276pt"
+        android:layout_height="386pt"/>
+
+    <ImageView
+        android:id="@+id/ivSkin4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glCenter"
+        android:background="@drawable/main_gender_male"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_width="276pt"
+        android:layout_height="386pt" />
+
+    <ImageView
+        android:id="@+id/ivSkin5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivSkin4"
+        android:background="@drawable/main_gender_female"
+        android:layout_width="276pt"
+        android:layout_height="386pt"/>
+
+    <ImageView
+        android:id="@+id/ivSkin6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivSkin4"
+        android:background="@drawable/main_gender_other"
+        android:layout_width="276pt"
+        android:layout_height="386pt"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glCenter"
+        android:layout_width="match_parent"
+        android:layout_height="200pt"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

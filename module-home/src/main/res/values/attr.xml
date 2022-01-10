@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="rightPadding" format="dimension" />
+    <attr name="progressColor" format="color" />
+    <attr name="progressBackground" format="color" />
+    <attr name="textColor" format="color" />
+    <attr name="lineColor" format="color" />
+    <attr name="labelColor" format="color" />
+    <attr name="label" format="string" />
+    <attr name="hasBottomLine" format="boolean" />
+    <attr name="hasTopLine" format="boolean" />
+    <attr name="viewIcon" format="reference" />
+    <attr name="arrow" format="reference" />
+    <attr name="pillarColor" format="color" />
+    <attr name="chartViewBackground" format="color" />
+    <attr name="value" format="string" />
+    <attr name="valueColor" format="color" />
+    <!--图表控件-->
+    <declare-styleable name="CircleView">
+        <attr name="circleColor" format="color"/>
+        <attr name="borderColor" format="color"/>
+    </declare-styleable>
+</resources>

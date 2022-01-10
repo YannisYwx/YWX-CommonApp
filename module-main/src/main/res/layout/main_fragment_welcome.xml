@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/pager_padding"
+    android:paddingEnd="@dimen/pager_padding">
+
+    <TextView
+        android:id="@+id/tv_title_welcome"
+        style="@style/LargeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310pt"
+        android:text="@string/ani_welcome_title"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label_veepoo"
+        style="@style/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23pt"
+        android:textDirection="locale"
+        android:text="@string/ani_welcome_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_welcome" />
+
+
+    <TextView
+        android:id="@+id/tvPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46pt"
+        android:text="@string/ani_welcome_action_data_and_privacy"
+        android:textColor="@color/tcBlue"
+        android:textSize="49pt"
+        app:layout_constraintBottom_toTopOf="@id/btnNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCheckBox"
+        android:layout_width="54pt"
+        android:layout_height="54pt"
+        android:layout_marginEnd="20pt"
+        android:src="@drawable/common_checkbox"
+        app:layout_constraintBottom_toBottomOf="@id/tvPrivacy"
+        app:layout_constraintEnd_toStartOf="@id/tvPrivacy"
+        app:layout_constraintTop_toTopOf="@id/tvPrivacy" />
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/LargeButton"
+        android:layout_marginBottom="@dimen/pager_margin_bottom_50"
+        android:enabled="false"
+        android:text="@string/ani_general_action_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

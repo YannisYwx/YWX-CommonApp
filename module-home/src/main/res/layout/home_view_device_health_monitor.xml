@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/px2pt_16"
+    android:paddingBottom="@dimen/px2pt_16">
+
+    <TextView
+        android:id="@+id/tvHealthMonitor"
+        style="@style/MainText.emphasis"
+        android:text="@string/ani_device_health_and_monitor_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHealthMonitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHealthMonitor">
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civHeartHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:icon="@mipmap/icon_device_heart_style1_ltmode"
+            app:label="@string/ani_device_hearthealth_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civRespiratory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:icon="@mipmap/icon_device_respiratory_style1_ltmode"
+            app:label="@string/ani_device_respiratory_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civHeartHealth" />
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:icon="@mipmap/icon_device_sleep_style1_ltmode"
+            app:label="@string/ani_data_class_sleep"
+            app:hasBottomLine="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civRespiratory" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

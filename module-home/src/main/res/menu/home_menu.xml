@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_today"
+        android:icon="@drawable/home_tabbar_today"
+        android:title="@string/ani_general_tab_today"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_device"
+        android:icon="@drawable/home_tabbar_device"
+        android:title="@string/ani_general_tab_device"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/home_tabbar_profile"
+        android:title="@string/ani_general_tab_profile"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/pager_padding"
+    android:paddingEnd="@dimen/pager_padding">
+
+    <TextView
+        android:id="@+id/tvTitleSignIn"
+        style="@style/LargeTitle"
+        android:layout_marginTop="138pt"
+        android:text="How would you like to sign in?"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/btnEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_big_height"
+        android:layout_marginTop="254pt"
+        android:background="@drawable/common_btn_selector"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleSignIn">
+
+        <ImageView
+            android:layout_width="64pt"
+            android:layout_height="64pt"
+            app:srcCompat="@mipmap/icon_email" />
+
+        <TextView
+            style="@style/btnText"
+            android:layout_marginStart="@dimen/btn_drawable_margin"
+            android:text="Sign in with Email"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_big_height"
+        android:layout_marginTop="46pt"
+        android:background="@drawable/common_btn_selector"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEmail">
+
+        <ImageView
+            android:layout_width="64pt"
+            android:layout_height="64pt"
+            app:srcCompat="@mipmap/icon_facebook" />
+
+        <TextView
+            style="@style/btnText"
+            android:layout_marginStart="@dimen/btn_drawable_margin"
+            android:text="Sign in with Facebook"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnApple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_big_height"
+        android:layout_marginTop="46pt"
+        android:background="@drawable/btn_black_selector"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFacebook">
+
+        <ImageView
+            android:layout_width="64pt"
+            android:layout_height="64pt"
+            app:srcCompat="@mipmap/icon_apple" />
+
+        <TextView
+            style="@style/btnText"
+            android:layout_marginStart="@dimen/btn_drawable_margin"
+            android:text="Sign in with Apple"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_big_height"
+        android:layout_marginTop="46pt"
+        android:background="@drawable/btn_black_b_selector"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnApple">
+
+        <ImageView
+            android:layout_width="64pt"
+            android:layout_height="64pt"
+            app:srcCompat="@mipmap/icon_google" />
+
+        <TextView
+            style="@style/btnText"
+            android:layout_marginStart="@dimen/btn_drawable_margin"
+            android:text="Sign in with Google"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLabelSignUp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnSignUp"
+        android:layout_marginBottom="58pt"
+        android:textSize="@dimen/btnTextSize"
+        android:text="New to Veepoo Health?"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        style="@style/LargeButton"
+        android:background="@drawable/main_btn_sign_up"
+        android:text="Sign Up"
+        android:textColor="@color/tcBlue"
+        android:layout_marginBottom="144pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

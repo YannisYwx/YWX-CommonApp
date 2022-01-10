@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stubRoot"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.ywx.common.widget.ExpandableLayout
+        android:id="@+id/elAllDaySet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px2pt_24"
+        android:layout_marginTop="@dimen/px2pt_24"
+        android:layout_marginEnd="@dimen/px2pt_24"
+        android:background="@drawable/white_round_card"
+        app:isExpand="true"
+        app:contentLayout="@layout/view_content_allday"
+        app:headerLayout="@layout/view_header_allday"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSensitivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px2pt_24"
+        android:layout_marginTop="@dimen/px2pt_24"
+        android:layout_marginEnd="@dimen/px2pt_24"
+        android:padding="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        app:layout_constraintTop_toBottomOf="@id/elAllDaySet">
+
+        <TextView
+            android:id="@+id/tvSensitivity"
+            style="@style/MainText"
+            android:text="@string/ani_device_wakeupgesture_sensitivity_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSensitivityValue"
+            style="@style/MainText.grey"
+            android:text="High"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivSenLow"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:layout_marginTop="@dimen/px2pt_16"
+            android:src="@mipmap/emission_low"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSensitivity" />
+
+        <ImageView
+            android:id="@+id/ivSenHigh"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:layout_marginTop="@dimen/px2pt_16"
+            android:src="@mipmap/emission_high"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSensitivity" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            app:layout_constraintStart_toEndOf="@id/ivSenLow"
+            app:layout_constraintEnd_toStartOf="@id/ivSenHigh"
+            app:layout_constraintTop_toTopOf="@id/ivSenLow"
+            app:layout_constraintBottom_toBottomOf="@id/ivSenLow"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:layout_marginEnd="@dimen/px2pt_16"
+            android:id="@+id/sbSensitivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvSensitivityTips1"
+        style="@style/MainText.grey.12"
+        android:paddingStart="@dimen/px2pt_40"
+        android:paddingEnd="@dimen/px2pt_40"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:text="@string/ani_device_wakeupgesture_content_1operation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clSensitivity" />
+
+    <TextView
+        android:id="@+id/tvSensitivityTips2"
+        style="@style/MainText.grey.12"
+        android:paddingStart="@dimen/px2pt_40"
+        android:paddingEnd="@dimen/px2pt_40"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:text="@string/ani_device_wakeupgesture_content_2high"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSensitivityTips1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

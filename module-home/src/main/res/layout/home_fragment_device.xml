@@ -1,0 +1,18 @@
+<androidx.recyclerview.widget.RecyclerView android:id="@+id/rvDevice"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="@dimen/px2pt_24"
+    android:paddingEnd="@dimen/px2pt_24"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+<!--<com.ywx.common.widget.OverScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvDevice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/px2pt_24"
+    android:paddingEnd="@dimen/px2pt_24" />
+
+</com.ywx.common.widget.OverScrollLayout>-->

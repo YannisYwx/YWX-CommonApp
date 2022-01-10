@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1080pt"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/px2pt_16"
+    android:paddingEnd="@dimen/px2pt_16"
+    android:paddingTop="@dimen/px2pt_10"
+    android:paddingBottom="@dimen/px2pt_10">
+
+    <TextView
+        android:id="@+id/tvEndFrom"
+        style="@style/MainText"
+        android:text="End at"
+        app:layout_constraintBottom_toBottomOf="@id/tvEndTimeValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvEndTimeValue" />
+
+    <com.ywx.common.widget.Slided2SelectedView
+        android:id="@+id/ssvEndAmPm"
+        android:layout_width="288pt"
+        android:layout_height="@dimen/px2pt_36"
+        android:layout_marginEnd="@dimen/px2pt_5"
+        app:leftText="am"
+        app:rightText="pm"
+        app:layout_constraintBottom_toBottomOf="@id/tvEndTimeValue"
+        app:layout_constraintEnd_toStartOf="@id/tvEndTimeValue"
+        app:layout_constraintTop_toTopOf="@id/tvEndTimeValue" />
+
+    <TextView
+        android:id="@+id/tvEndTimeValue"
+        android:layout_width="@dimen/px2pt_68"
+        android:layout_height="@dimen/px2pt_36"
+        android:background="@drawable/shape_grep_text_btn"
+        android:layout_marginTop="@dimen/px2pt_20"
+        android:gravity="center"
+        android:text="18:48"
+        android:textSize="@dimen/textSize_17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStartTimeValue" />
+</androidx.constraintlayout.widget.ConstraintLayout>

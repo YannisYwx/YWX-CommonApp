@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vAlldayRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--        <com.ywx.common.widget.ExpandableLayout xmlns:expandable="http://schemas.android.com/apk/res-auto"-->
+    <!--            android:id="@+id/expandStartTimeSet"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/white_round_card"-->
+    <!--            android:visibility="visible"-->
+    <!--            expandable:isExpand="true"-->
+    <!--            expandable:contentLayout="@layout/view_content_start_time_set"-->
+    <!--            expandable:headerLayout="@layout/view_header_start_time_set"-->
+    <!--            expandable:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <com.ywx.common.widget.ExpandableLayout xmlns:expandable="http://schemas.android.com/apk/res-auto"-->
+    <!--            android:id="@+id/expandEndTimeSet"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/white_round_card"-->
+    <!--            android:visibility="visible"-->
+    <!--            expandable:isExpand="true"-->
+    <!--            expandable:contentLayout="@layout/view_content_end_time_set"-->
+    <!--            expandable:headerLayout="@layout/view_header_end_time_set"-->
+    <!--            expandable:layout_constraintTop_toBottomOf="@id/expandStartTimeSet" />-->
+
+
+    <com.ywx.common.widget.ExpandableCLayout
+        android:id="@+id/eclTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_round_card"
+        app:ecl_contentLayout="@layout/view_content_start_time_set"
+        app:ecl_headerLayout="@layout/view_header_start_time_set"
+        app:ecl_isExpand="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ywx.common.widget.ExpandableCLayout
+        android:id="@+id/eclBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_round_card"
+        app:ecl_contentLayout="@layout/view_content_start_time_set"
+        app:ecl_headerLayout="@layout/view_header_start_time_set"
+        app:ecl_isExpand="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eclTop" />
+
+    <com.ywx.common.widget.ExpandableLooperView
+        android:id="@+id/elvInterval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eclBottom"
+        app:label="Interval"
+        app:maxValue="120"
+        app:minValue="20"
+        app:unit="mins"
+        />
+
+    <!--    <ViewStub-->
+    <!--        android:id="@+id/viewStub"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout="@layout/view_header_start_time_set"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <include-->
+    <!--        android:id="@+id/vReplaceHolder"-->
+    <!--        layout="@layout/view_allday_time_set_stub"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

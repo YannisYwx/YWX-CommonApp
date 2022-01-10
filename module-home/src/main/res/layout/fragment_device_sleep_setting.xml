@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSleep"
+        style="@style/LargeTitle.plus"
+        android:layout_marginStart="@dimen/margin_20"
+        android:text="@string/ani_data_class_sleep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSleepTrack"
+        style="@style/MainText.grey.12"
+        android:layout_marginStart="@dimen/px2pt_40"
+        android:layout_marginTop="@dimen/px2pt_35"
+        android:text="@string/ani_device_sleep_sleeptracking_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSleep" />
+
+    <com.ywx.common.widget.CommonItemView
+        android:id="@+id/civMonitorSleepAllDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px2pt_24"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:layout_marginEnd="@dimen/px2pt_24"
+        android:background="@drawable/white_round_card"
+        app:hasSwitchButton="true"
+        app:label="@string/ani_device_sleep_alldaymonitor_title"
+        app:layout_constraintTop_toBottomOf="@id/tvSleepTrack" />
+
+    <TextView
+        android:id="@+id/tvMonitorSleepAllDayTips"
+        style="@style/MainText.grey.12"
+        android:paddingStart="@dimen/px2pt_40"
+        android:paddingEnd="@dimen/px2pt_40"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:text="@string/ani_device_sleep_alldaymonitor_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civMonitorSleepAllDay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

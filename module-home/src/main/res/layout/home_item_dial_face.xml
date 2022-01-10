@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/px2pt_12">
+
+    <ImageView
+        android:id="@+id/ivDialFaceBg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/st_bg_watch_face"
+        android:layout_width="362.88pt"
+        android:layout_height="411.84pt"
+        android:visibility="visible"/>
+    
+    <ImageView
+        android:id="@+id/ivDialFace"
+        android:layout_width="265.2pt"
+        android:layout_height="349.43pt"
+        android:src="@mipmap/local_face_0"
+        app:layout_constraintTop_toTopOf="@id/ivDialFaceBg"
+        app:layout_constraintBottom_toBottomOf="@id/ivDialFaceBg"
+        app:layout_constraintStart_toStartOf="@id/ivDialFaceBg"
+        app:layout_constraintEnd_toEndOf="@id/ivDialFaceBg"/>
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        app:layout_constraintTop_toTopOf="@id/ivDialFaceBg"
+        app:layout_constraintEnd_toEndOf="@id/ivDialFaceBg"
+        android:src="@mipmap/icon_selected_bw_ltmode"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_width="@dimen/px2pt_28"
+        android:layout_height="@dimen/px2pt_28"/>
+    
+    <TextView
+        android:id="@+id/tvFaceName"
+        style="@style/MainText"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/ivDialFaceBg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/tc_black_blue"
+        android:textStyle="bold"
+        android:text="Local face"
+        android:layout_marginTop="@dimen/px2pt_8"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

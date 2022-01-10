@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/MainText.emphasis"
+        android:layout_marginStart="@dimen/px2pt_24"
+        android:layout_marginTop="@dimen/px2pt_24"
+        android:text="@string/ani_watchface_onlineface_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDialFaceBg"
+        android:layout_width="362.88pt"
+        android:layout_height="411.84pt"
+        android:layout_marginStart="@dimen/px2pt_36"
+        android:layout_marginTop="@dimen/margin_16"
+        android:src="@drawable/st_bg_watch_face"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/ivDialFace"
+        android:layout_width="265.2pt"
+        android:layout_height="349.43pt"
+        android:src="@mipmap/local_face_0"
+        app:layout_constraintBottom_toBottomOf="@id/ivDialFaceBg"
+        app:layout_constraintEnd_toEndOf="@id/ivDialFaceBg"
+        app:layout_constraintStart_toStartOf="@id/ivDialFaceBg"
+        app:layout_constraintTop_toTopOf="@id/ivDialFaceBg" />
+
+    <TextView
+        android:id="@+id/tvTitleCurrent"
+        style="@style/MainText.grey"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/px2pt_48"
+        android:gravity="center"
+        android:text="@string/ani_cyclet_current_title"
+        android:textSize="@dimen/textSize_15"
+        android:layout_marginStart="@dimen/px2pt_15"
+        app:layout_constraintStart_toEndOf="@id/ivDialFaceBg"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvCurrentDialFaceLabel"
+        style="@style/LargeTitle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/ani_watchface_online_content_notdownloaded"
+        app:layout_constraintStart_toStartOf="@id/tvTitleCurrent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleCurrent" />
+
+    <TextView
+        android:id="@+id/tvAll"
+        style="@style/MainText.emphasis"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin_32"
+        android:text="@string/ani_general_content_all"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/ivDialFaceBg" />
+
+    <LinearLayout
+        android:id="@+id/llLoading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivDialFaceBg"
+        android:layout_marginTop="@dimen/px2pt_68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <ProgressBar
+            android:layout_width="@dimen/px2pt_22"
+            android:layout_height="@dimen/px2pt_22"/>
+        <TextView
+            style="@style/MainText"
+            android:layout_marginStart="@dimen/px2pt_4"
+            android:text="@string/agentweb_loading"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDialFaces"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tvAll"
+        app:spanCount="2"
+        app:flow_horizontalGap="@dimen/px2pt_48"
+        tools:listitem="@layout/home_item_dial_face" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/LargeTitle"
+        android:text="@string/ani_device_finddevice_cant_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/px2pt_24"/>
+
+    <TextView
+        android:id="@+id/tvDiffPlace"
+        style="@style/MainText"
+        android:text="@string/ani_device_finddevice_status_weak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="@dimen/px2pt_24"/>
+
+    <TextView
+        android:id="@+id/tvTipsDiffPlace"
+        style="@style/MainText.grey"
+        android:text="@string/ani_device_finddevice_cant_content_1move"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDiffPlace"
+        android:layout_marginTop="8pt"/>
+
+    <TextView
+        android:id="@+id/tvChargedEnough"
+        style="@style/MainText"
+        android:text="@string/ani_device_finddevice_cant_subtitle_2charge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTipsDiffPlace"
+        android:layout_marginTop="@dimen/px2pt_24"/>
+
+    <TextView
+        android:id="@+id/tvTipsChargedEnough"
+        style="@style/MainText.grey"
+        android:text="@string/ani_device_finddevice_cant_content_2charge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChargedEnough"
+        android:layout_marginTop="8pt"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

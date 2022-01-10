@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/pager_padding"
+    android:paddingEnd="@dimen/pager_padding">
+
+    <TextView
+        android:id="@+id/tvTitleBackupSyn"
+        style="@style/LargeTitle"
+        android:layout_marginTop="138pt"
+        android:text="@string/ani_permission_backup_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBackupSynTips"
+        style="@style/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_line_space"
+        android:text="@string/anrd_checklist_backup_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleBackupSyn" />
+
+
+    <Button
+        android:id="@+id/btnSetUp"
+        style="@style/LargeButton"
+        android:layout_marginBottom="420pt"
+        android:enabled="true"
+        android:text="@string/ani_general_action_setup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOnlySyncGoogleFit"
+        style="@style/MainText.15.blue"
+        android:layout_marginTop="58pt"
+        android:text="@string/anrd_permission_backup_action_only"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSetUp" />
+
+    <TextView
+        android:id="@+id/tvNotNow"
+        style="@style/MainText.15.blue"
+        android:layout_marginTop="92pt"
+        android:text="@string/ani_general_action_notnow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOnlySyncGoogleFit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

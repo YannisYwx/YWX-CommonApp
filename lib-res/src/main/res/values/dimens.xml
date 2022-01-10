@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--按照设计图宽375px 计算出对应的1080pt的字体大小-->
+
+    <!--字体等级Text Size-->
+    <dimen name="largeTitleSize.PLUS">@dimen/px2pt_34</dimen> <!--大标题字体大小-->
+    <dimen name="largeTitleSize">@dimen/textSize_28</dimen> <!--大标题字体大小-->
+    <dimen name="normalTextSize">@dimen/textSize_17</dimen><!--一般的字体大小 17-->
+    <dimen name="emphasisTextSize">@dimen/textSize_22</dimen><!--一般的字体大小 17-->
+    <dimen name="btnTextSize">@dimen/textSize_15</dimen><!--按钮的字体大小 15-->
+    <dimen name="sheet_corners">30pt</dimen><!--弹框的边角-->
+    <dimen name="pager_padding">@dimen/margin_32</dimen><!--界面大边距-->
+    <dimen name="pager_padding_min">@dimen/margin_16</dimen><!--界面小边距-->
+    <!---->
+    <dimen name="btn_drawable_margin">23pt</dimen> <!--按钮图片文字间隔-->
+    <dimen name="btn_big_height">@dimen/bar_height_44</dimen> <!--大按钮的高度-->
+
+    <dimen name="text_line_space">23pt</dimen> <!--文段行距 8-->
+
+    <!--字体大小-->
+    <dimen name="textSize_12">@dimen/px2pt_12</dimen> <!--375px-12px-->
+    <dimen name="textSize_13">@dimen/px2pt_13</dimen> <!--375px-13px-->
+    <dimen name="textSize_15">@dimen/px2pt_15</dimen> <!--375px-15px-->
+    <dimen name="textSize_17">@dimen/px2pt_17</dimen> <!--375px-17px-->
+    <dimen name="textSize_18">@dimen/px2pt_18</dimen> <!--375px-18px-->
+    <dimen name="textSize_22">@dimen/px2pt_22</dimen> <!--375px-22px-->
+    <dimen name="textSize_28">@dimen/px2pt_28</dimen> <!--375px-28px-->
+    <dimen name="textSize_64">@dimen/px2pt_64</dimen> <!--375px-64px-->
+
+
+    <dimen name="title_bar_height">144pt</dimen>
+<!--    <dimen name="text_54pt">54pt</dimen>&lt;!&ndash;18sp 大字&ndash;&gt;-->
+<!--    <dimen name="text_48pt">48pt</dimen>&lt;!&ndash;15sp 中等字&ndash;&gt;-->
+<!--    <dimen name="text_42pt">42pt</dimen>&lt;!&ndash;15sp 中等字&ndash;&gt;-->
+<!--    <dimen name="text_36pt">36pt</dimen>&lt;!&ndash;12sp 小字&ndash;&gt;-->
+<!--    <dimen name="text_24pt">24pt</dimen>&lt;!&ndash;小字&ndash;&gt;-->
+    <dimen name="dividerHeight">1pt</dimen><!--分割线高度-->
+
+
+    <dimen name="bar_height_44">126.72pt</dimen> <!--375px-44px-->
+    <dimen name="pager_margin_bottom_50">144pt</dimen> <!--375px-50px-->
+
+    <!--边距相关-->
+    <dimen name="margin_8">@dimen/px2pt_8</dimen>
+    <dimen name="margin_16">@dimen/px2pt_16</dimen>
+    <dimen name="margin_20">@dimen/px2pt_20</dimen>
+    <dimen name="margin_32">@dimen/px2pt_32</dimen>
+    
+    <dimen name="buttonRadius">@dimen/px2pt_8</dimen><!--按钮圆角-->
+    <dimen name="cardRadius">@dimen/px2pt_12</dimen><!--卡片圆角-->
+    <dimen name="bottomSheetRadius">@dimen/px2pt_16</dimen><!--弹框-->
+
+    <!--圆角-->
+    <dimen name="corners_normal">@dimen/px2pt_16</dimen><!--通用最常见的圆角尺寸-->
+    <dimen name="corners_big">@dimen/px2pt_22</dimen><!--大圆角尺寸 椭圆形按钮-->
+
+    <!--item-->
+    <dimen name="main_item_height">@dimen/px2pt_56</dimen><!--主界面的item高度-->
+
+    <dimen name="icon_size">@dimen/px2pt_28</dimen>
+
+    <!--px -> pt-->
+    <dimen name="px2pt_1">2.88pt</dimen>
+    <dimen name="px2pt_2">5.76pt</dimen>
+    <dimen name="px2pt_3">8.64pt</dimen>
+    <dimen name="px2pt_4">11.52pt</dimen>
+    <dimen name="px2pt_5">14.4pt</dimen>
+    <dimen name="px2pt_6">17.28pt</dimen>
+    <dimen name="px2pt_8">23.04pt</dimen>
+    <dimen name="px2pt_10">28.8pt</dimen>
+    <dimen name="px2pt_12">34.56pt</dimen>
+    <dimen name="px2pt_13">37.44pt</dimen>
+    <dimen name="px2pt_15">43.2pt</dimen>
+    <dimen name="px2pt_16">46.08pt</dimen>
+    <dimen name="px2pt_17">48.96pt</dimen>
+    <dimen name="px2pt_18">51.84pt</dimen>
+    <dimen name="px2pt_20">57.6pt</dimen>
+    <dimen name="px2pt_22">63.36pt</dimen>
+    <dimen name="px2pt_24">69.12pt</dimen>
+    <dimen name="px2pt_28">80.64pt</dimen>
+    <dimen name="px2pt_30">86.4pt</dimen>
+    <dimen name="px2pt_32">92.16pt</dimen>
+    <dimen name="px2pt_34">97.90pt</dimen>
+    <dimen name="px2pt_35">100.8pt</dimen>
+    <dimen name="px2pt_36">103.68pt</dimen>
+    <dimen name="px2pt_40">115.2pt</dimen>
+    <dimen name="px2pt_44">126.72pt</dimen>
+    <dimen name="px2pt_46">132.48pt</dimen>
+    <dimen name="px2pt_48">138.24pt</dimen>
+    <dimen name="px2pt_50">144pt</dimen>
+    <dimen name="px2pt_56">161.28pt</dimen>
+    <dimen name="px2pt_64">184.32pt</dimen>
+    <dimen name="px2pt_68">195.84pt</dimen>
+    <dimen name="px2pt_76">218.88pt</dimen>
+    <dimen name="px2pt_120">345.6pt</dimen>
+</resources>

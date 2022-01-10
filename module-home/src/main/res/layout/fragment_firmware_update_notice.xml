@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/px2pt_16"
+    android:paddingEnd="@dimen/px2pt_16"
+    android:paddingBottom="@dimen/px2pt_64">
+
+    <TextView
+        android:id="@+id/tvUpdateBefore"
+        style="@style/MainText.emphasis"
+        android:layout_marginTop="@dimen/px2pt_35"
+        android:text="@string/ani_device_updatefirm_before_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUpdateBeforeTips"
+        style="@style/MainText"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:text="@string/ani_device_updatefirm_before_content"
+        app:layout_constraintStart_toStartOf="@id/tvUpdateBefore"
+        app:layout_constraintTop_toBottomOf="@id/tvUpdateBefore" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/tvUpdateBeforeTips">
+
+        <ImageView
+            android:id="@+id/ivTime"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_duration_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTimeTips"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="Take about 5 mintues"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivTime"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBattery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_goneMarginTop="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clTime">
+
+        <ImageView
+            android:id="@+id/ivBattery"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_battery_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBatteryTips"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="Your phone and device's batteries above 40%"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivBattery"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDistance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clBattery">
+
+        <ImageView
+            android:id="@+id/ivDistance"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_02_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDistanceTips"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="Distance between phone and Watch RIG within 0.2 m"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivDistance"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDoNotOpt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clDistance">
+
+        <ImageView
+            android:id="@+id/ivDoNotOpt"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_donotoperate_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDoNotOptTips"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="Do not operate phone or Watch RIG"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivDoNotOpt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPhoneCallFailure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2pt_76"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_card"
+        android:padding="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/clDoNotOpt">
+
+        <ImageView
+            android:id="@+id/ivPhoneCallFailure"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:src="@mipmap/icon_update_call_ltmode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPhoneCallFailureTips"
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:text="@string/ani_device_updatefirm_before_phonecall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivPhoneCallFailure"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        style="@style/LargeButton"
+        android:layout_marginTop="@dimen/px2pt_48"
+        android:text="@string/ani_device_updatefirm_action_updatenow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clPhoneCallFailure" />
+</androidx.constraintlayout.widget.ConstraintLayout>

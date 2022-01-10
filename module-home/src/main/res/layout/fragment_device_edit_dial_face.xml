@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWatchFaces"
+        style="@style/LargeTitle.plus"
+        android:text="@string/ani_watchface_title"
+        android:layout_marginStart="@dimen/margin_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="195.84pt"
+        android:layout_marginStart="@dimen/px2pt_24"
+        android:layout_marginEnd="@dimen/px2pt_24"
+        android:paddingTop="@dimen/px2pt_16"
+        android:paddingBottom="@dimen/px2pt_16"
+        app:layout_constraintTop_toBottomOf="@id/tvWatchFaces" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpDialFaces"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvTabHost" />
+</androidx.constraintlayout.widget.ConstraintLayout>

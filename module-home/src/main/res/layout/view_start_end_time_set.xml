@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ywx.common.widget.ExpandableLayout xmlns:expandable="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expandStartTimeSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_round_card"
+        android:visibility="visible"
+        expandable:isExpand="true"
+        expandable:contentLayout="@layout/view_content_start_time_set"
+        expandable:headerLayout="@layout/view_header_start_time_set"
+        expandable:layout_constraintTop_toTopOf="parent" />
+
+    <com.ywx.common.widget.ExpandableLayout xmlns:expandable="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expandEndTimeSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_round_card"
+        android:visibility="visible"
+        expandable:isExpand="true"
+        expandable:contentLayout="@layout/view_content_end_time_set"
+        expandable:headerLayout="@layout/view_header_end_time_set"
+        expandable:layout_constraintTop_toBottomOf="@id/expandStartTimeSet" />
+</androidx.constraintlayout.widget.ConstraintLayout>

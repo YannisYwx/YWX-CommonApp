@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/px2pt_16"
+    android:paddingBottom="@dimen/px2pt_16">
+
+    <TextView
+        android:id="@+id/tvScreenDisplay"
+        style="@style/MainText.emphasis"
+        android:text="@string/ani_device_screen_and_display_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clScreenDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:background="@drawable/white_round_bg"
+        android:paddingTop="@dimen/px2pt_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScreenDisplay">
+
+        <TextView
+            android:id="@+id/tvBrightness"
+            style="@style/MainText"
+            android:text="@string/ani_device_brightness_title"
+            android:layout_marginStart="@dimen/px2pt_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivBrightnessLe"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:layout_marginTop="@dimen/px2pt_16"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:src="@mipmap/icon_brightness_lower_le"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBrightness" />
+
+        <ImageView
+            android:id="@+id/ivBrightnessHi"
+            android:layout_width="@dimen/px2pt_28"
+            android:layout_height="@dimen/px2pt_28"
+            android:layout_marginTop="@dimen/px2pt_16"
+            android:layout_marginEnd="@dimen/px2pt_16"
+            android:src="@mipmap/icon_brightness_higher_tr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBrightness" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/skBrightness"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px2pt_16"
+            android:layout_marginEnd="@dimen/px2pt_16"
+            app:layout_constraintBottom_toBottomOf="@id/ivBrightnessHi"
+            app:layout_constraintEnd_toStartOf="@id/ivBrightnessHi"
+            app:layout_constraintStart_toEndOf="@id/ivBrightnessLe"
+            app:layout_constraintTop_toTopOf="@id/ivBrightnessHi" />
+
+        <TextView
+            android:id="@+id/tvScreenAutoOff"
+            style="@style/MainText"
+            android:layout_marginTop="@dimen/px2pt_24"
+            android:text="@string/ani_device_screenoff_title"
+            android:layout_marginStart="@dimen/px2pt_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/skBrightness" />
+
+        <com.ywx.common.widget.MinusPlusView
+            android:id="@+id/mpvBrightness"
+            android:layout_width="282.24pt"
+            android:layout_height="@dimen/px2pt_28"
+            android:layout_marginEnd="@dimen/px2pt_16"
+            app:layout_constraintBottom_toBottomOf="@id/tvScreenAutoOff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvScreenAutoOff" />
+
+        <com.ywx.common.widget.CommonItemView
+            android:id="@+id/civWakeupGesture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px2pt_8"
+            app:arrow="@mipmap/icon_arrow_right"
+            app:label="@string/ani_device_wakeupgesture_title"
+            app:hasBottomLine="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvScreenAutoOff" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

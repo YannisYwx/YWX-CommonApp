@@ -1,0 +1,8 @@
+include ':lib-res'
+include ':lib-third'
+include ':module-home'
+include ':module-main'
+include ':library-network'
+include ':lib-common'
+include ':app'
+rootProject.name = "YWX-APP"

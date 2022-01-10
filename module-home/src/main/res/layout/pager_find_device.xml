@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvFinding"
+        style="@style/MainText.emphasis"
+        android:layout_marginTop="@dimen/px2pt_16"
+        android:text="@string/ani_device_finddevice_finding_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWatchRIG"
+        style="@style/LargeTitle"
+        android:layout_marginTop="@dimen/px2pt_8"
+        android:text="Watch RIG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFinding" />
+
+    <com.xxx.home.ui.widget.OngoingView
+        android:id="@+id/ovLoading"
+        android:layout_width="@dimen/px2pt_64"
+        android:layout_height="@dimen/px2pt_28"
+        android:layout_marginTop="@dimen/px2pt_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWatchRIG" />
+
+    <TextView
+        android:id="@+id/tvConnectTips"
+        style="@style/MainText"
+        android:layout_marginTop="@dimen/px2pt_3"
+        android:gravity="center"
+        android:text="@string/ani_general_alert_connectionlost_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ovLoading" />
+
+    <TextView
+        android:id="@+id/tvConnectTips1"
+        style="@style/MainText"
+        android:layout_marginTop="@dimen/px2pt_3"
+        android:gravity="center"
+        android:text="@string/ani_general_alert_connectionlost_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvConnectTips" />
+
+    <ImageView
+        android:id="@+id/ivWatch"
+        android:layout_width="288pt"
+        android:layout_height="459pt"
+        android:src="@mipmap/illustration_device_model_watchrig_large"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tvBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvConnectTips1" />
+
+    <ImageView
+        android:id="@+id/ivDisconnect"
+        android:layout_width="748.8pt"
+        android:layout_height="748.8pt"
+        android:src="@mipmap/illustration_device_pair_lostconnection_ltmode"
+        app:layout_constraintBottom_toTopOf="@id/btnGoToConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvConnectTips" />
+
+    <TextView
+        android:id="@+id/tvBottom"
+        style="@style/MainText.blue"
+        android:layout_marginBottom="@dimen/px2pt_32"
+        android:gravity="center"
+        android:text="@string/ani_device_finddevice_action_havefound"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGoToConnect"
+        style="@style/LargeButton"
+        android:layout_marginBottom="@dimen/px2pt_32"
+        android:text="@string/ani_general_action_connect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

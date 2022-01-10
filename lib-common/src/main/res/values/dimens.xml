@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="simpleBarHeight">144pt</dimen>
+    <dimen name="simpleBarTitle">49pt</dimen>
+    <dimen name="simpleBarSubtitle">36pt</dimen>
+    <dimen name="simpleBarAction">49pt</dimen>
+    <dimen name="mainLine">8dp</dimen>
+    <dimen name="secondLine">1dp</dimen>
+    <dimen name="itemRadius">3dp</dimen>
+
+
+</resources>

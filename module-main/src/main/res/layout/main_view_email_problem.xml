@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvEmailProblem"
+        style="@style/LargeTitle"
+        android:layout_marginTop="172pt"
+        android:text="@string/ani_account_trouble_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/pager_padding_min"
+        android:layout_marginTop="236pt"
+        android:layout_marginEnd="@dimen/pager_padding_min"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailProblem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/MainText.bold"
+                android:text="@string/ani_account_trouble_subtitle_1another" />
+
+            <TextView
+                style="@style/MainText.grey"
+                android:layout_marginTop="10pt"
+                android:text="@string/ani_account_trouble_content_1another" />
+
+            <TextView
+                android:id="@+id/tvChangeEmail"
+                style="@style/MainText.blue"
+                android:layout_marginTop="10pt"
+                android:text="@string/ani_account_code_action_change" />
+
+            <TextView
+                style="@style/MainText.bold"
+                android:layout_marginTop="70pt"
+                android:text="@string/ani_account_trouble_subtitle_2correct" />
+
+            <TextView
+                style="@style/MainText.grey"
+                android:layout_marginTop="10pt"
+                android:text="kkk19661006@foxmail.com" />
+
+            <TextView
+                android:id="@+id/tvCorrectEmail"
+                style="@style/MainText.blue"
+                android:layout_marginTop="10pt"
+                android:text="@string/ani_account_trouble_action_2correct" />
+
+            <TextView
+                style="@style/MainText.bold"
+                android:layout_marginTop="70pt"
+                android:text="@string/ani_account_trouble_subtitle_3trash" />
+
+            <TextView
+                style="@style/MainText.grey"
+                android:layout_marginTop="10pt"
+                android:text="@string/ani_account_trouble_content_3trash" />
+
+            <TextView
+                style="@style/MainText.bold"
+                android:layout_marginTop="70pt"
+                android:text="@string/ani_account_trouble_subtitle_4timeout" />
+
+            <TextView
+                style="@style/MainText.grey"
+                android:layout_marginTop="10pt"
+                android:text="@string/ani_account_trouble_content_4timeout" />
+
+            <TextView
+                android:id="@+id/tvSendAgain"
+                style="@style/MainText.blue"
+                android:layout_marginTop="10pt"
+                android:text="@string/ani_account_code_action_again" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

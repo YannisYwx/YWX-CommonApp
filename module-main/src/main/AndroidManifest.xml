@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.veepoo.main">
+
+    <application>
+        <!--        <meta-data-->
+        <!--            android:name="design_width_in_dp"-->
+        <!--            android:value="360"/>-->
+        <!--        <meta-data-->
+        <!--            android:name="design_height_in_dp"-->
+        <!--            android:value="640"/>-->
+        <activity
+            android:name="com.xxx.main.ui.activity.SplashActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xxx.main.ui.activity.WelcomeActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <!--        <activity-->
+        <!--            android:name=".ui.activity.GuideActivity"-->
+        <!--            android:launchMode="singleTask" />-->
+        <!--        <activity-->
+        <!--            android:name=".ui.activity.EntryActivity"-->
+        <!--            android:launchMode="singleTask" />-->
+    </application>
+</manifest>

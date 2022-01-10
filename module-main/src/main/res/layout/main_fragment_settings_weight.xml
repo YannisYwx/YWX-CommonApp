@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/LargeTitle"
+        android:text="@string/ani_profile_weight_question_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        style="@style/LargeEditText"
+        android:textSize="@dimen/textSize_64"
+        android:hint="@string/_0"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ywx.common.widget.Slided2SelectedView
+        android:layout_width="276pt"
+        android:layout_height="84pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWeight"
+        app:leftText="kg"
+        app:rightText="lbs"
+        app:slidedSquareColor="@color/appBlue"
+        app:selectTextColor="@color/white"
+        app:unselectTextColor="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

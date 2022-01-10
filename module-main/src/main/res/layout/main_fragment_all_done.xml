@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/pager_padding"
+    android:paddingEnd="@dimen/pager_padding">
+
+    <TextView
+        android:id="@+id/tvTitleAllDone"
+        style="@style/LargeTitle"
+        android:layout_marginTop="138pt"
+        android:text="@string/ani_general_content_alldone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleAllDoneReady"
+        style="@style/LargeTitle"
+        android:text="@string/ani_profile_done_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleAllDone" />
+
+    <ImageView
+        android:layout_width="570pt"
+        android:layout_height="530pt"
+        android:src="@mipmap/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDone"
+        style="@style/LargeButton"
+        android:layout_marginBottom="167pt"
+        android:enabled="true"
+        android:text="@string/ani_general_action_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

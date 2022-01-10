@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/pager_padding"
+    android:paddingEnd="@dimen/pager_padding">
+
+    <TextView
+        android:id="@+id/tvTitleEmail"
+        style="@style/LargeTitle"
+        android:layout_marginTop="138pt"
+        android:text="@string/ani_account_email_text_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCurrent"
+        style="@style/MainText.15"
+        android:text="@string/ani_account_email_change_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleEmail" />
+
+    <TextView
+        android:id="@+id/tvCurrentEmail"
+        style="@style/MainText"
+        android:layout_marginTop="@dimen/text_line_space"
+        android:text="kkk123123@foxmail.com"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrent" />
+
+
+    <EditText
+        android:id="@+id/etNewEmail"
+        style="@style/LargeEditText"
+        android:layout_marginTop="840pt"
+        android:background="@null"
+        android:freezesText="true"
+        android:hint="@string/ani_account_email_text_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvErrorTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ani_account_email_alert_num"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textSize="@dimen/normalTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewEmail" />
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/LargeButton"
+        android:layout_marginBottom="@dimen/pager_margin_bottom_50"
+        android:enabled="false"
+        android:text="@string/ani_general_action_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

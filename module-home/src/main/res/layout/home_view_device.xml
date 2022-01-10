@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1376pt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvDeviceName"
+        style="@style/LargeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="178pt"
+        android:text="Watch RIG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <ImageView
+        android:id="@+id/ivWatch"
+        app:layout_constraintTop_toBottomOf="@id/tvDeviceName"
+        android:layout_marginTop="@dimen/px2pt_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="455pt"
+        android:layout_height="723pt"
+        android:background="@mipmap/illustration_device_model_watchrig_large"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/px2pt_24"
+        app:layout_constraintTop_toBottomOf="@id/ivWatch"
+        android:text="08:00:20:0A:8C:6D"
+        style="@style/MainText.15"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
